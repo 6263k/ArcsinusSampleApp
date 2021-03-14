@@ -19,6 +19,7 @@ final class AppCoordinator {
 		return navigationViewController
 	}()
 	
+	private var childCoordinators = [Coordinatable]()
 	private let isLogged: Bool = true
 	
 	init(window: UIWindow?, dependencies: AppDependecies) {
@@ -33,6 +34,7 @@ final class AppCoordinator {
 		if isLogged {
 			let feedCoordinator = FeedCoordinator(rootNavigationController, dependencies)
 			feedCoordinator.start()
+			childCoordinators.append(feedCoordinator)
 		}
 	}
 	

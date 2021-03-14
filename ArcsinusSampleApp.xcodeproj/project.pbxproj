@@ -3,14 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0FF0C125FE54290099B79A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0C025FE54290099B79A /* FeedViewModel.swift */; };
+		9B0FF0C625FE54CF0099B79A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0C525FE54CF0099B79A /* BaseViewModel.swift */; };
+		9B0FF0CA25FE551C0099B79A /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0C925FE551C0099B79A /* Coordinatable.swift */; };
+		9B0FF0CD25FE55C00099B79A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0CC25FE55C00099B79A /* Transition.swift */; };
+		9B0FF0DB25FE5ABA0099B79A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0DA25FE5ABA0099B79A /* Coordinator.swift */; };
+		9B0FF0E025FE605A0099B79A /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0DF25FE605A0099B79A /* FeedDetailsViewController.swift */; };
+		9B0FF0E425FE608D0099B79A /* FeedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0E325FE608D0099B79A /* FeedDetailsViewModel.swift */; };
+		9B0FF0ED25FE64BF0099B79A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0EC25FE64BF0099B79A /* UIViewController+Extensions.swift */; };
+		9B0FF0F125FE6C560099B79A /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0F025FE6C560099B79A /* PushTransition.swift */; };
+		9B0FF0FB25FE6EB90099B79A /* ViewModelRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0FA25FE6EB90099B79A /* ViewModelRoutable.swift */; };
+		9B0FF0FE25FE73CD0099B79A /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0FD25FE73CD0099B79A /* ModalTransition.swift */; };
+		9B0FF14E25FE7B280099B79A /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF14D25FE7B280099B79A /* Routable.swift */; };
 		9B348CC825FD16B2004B14E3 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CC725FD16B2004B14E3 /* AppAssembly.swift */; };
 		9B348CCC25FD17C9004B14E3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CCB25FD17C9004B14E3 /* AppCoordinator.swift */; };
 		9B348CD125FD1B42004B14E3 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */; };
-		9B348CD725FD1D13004B14E3 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CD625FD1D13004B14E3 /* Storyboardable.swift */; };
+		9B348CD725FD1D13004B14E3 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CD625FD1D13004B14E3 /* Storyboard.swift */; };
 		9B348CDC25FD1F93004B14E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CDB25FD1F93004B14E3 /* BaseViewController.swift */; };
 		9BB36B0C25FD078000A11800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB36B0B25FD078000A11800 /* AppDelegate.swift */; };
 		9BB36B1325FD078000A11800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB36B1125FD078000A11800 /* Main.storyboard */; };
@@ -21,13 +33,29 @@
 		9BB36B3825FD0CE300A11800 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB36B3725FD0CE300A11800 /* DBManager.swift */; };
 		9BB36B3F25FD0D3C00A11800 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB36B3E25FD0D3C00A11800 /* FeedService.swift */; };
 		9BB36B4425FD0F9F00A11800 /* AppDependecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB36B4325FD0F9F00A11800 /* AppDependecies.swift */; };
+		D7C836124A44DB00B4883CAE /* Pods_ArcsinusSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781DF8BC8B8783E775D4D81C /* Pods_ArcsinusSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		324130F5E75FF35768ED13A1 /* Pods-ArcsinusSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcsinusSampleApp.release.xcconfig"; path = "Target Support Files/Pods-ArcsinusSampleApp/Pods-ArcsinusSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		781DF8BC8B8783E775D4D81C /* Pods_ArcsinusSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcsinusSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7879290372944B17114E5797 /* Pods-ArcsinusSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcsinusSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-ArcsinusSampleApp/Pods-ArcsinusSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9B0FF0C025FE54290099B79A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		9B0FF0C525FE54CF0099B79A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		9B0FF0C925FE551C0099B79A /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		9B0FF0CC25FE55C00099B79A /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		9B0FF0DA25FE5ABA0099B79A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9B0FF0DF25FE605A0099B79A /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
+		9B0FF0E325FE608D0099B79A /* FeedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewModel.swift; sourceTree = "<group>"; };
+		9B0FF0EC25FE64BF0099B79A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		9B0FF0F025FE6C560099B79A /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		9B0FF0FA25FE6EB90099B79A /* ViewModelRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelRoutable.swift; sourceTree = "<group>"; };
+		9B0FF0FD25FE73CD0099B79A /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		9B0FF14D25FE7B280099B79A /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		9B348CC725FD16B2004B14E3 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		9B348CCB25FD17C9004B14E3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
-		9B348CD625FD1D13004B14E3 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		9B348CD625FD1D13004B14E3 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		9B348CDB25FD1F93004B14E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9BB36B0825FD078000A11800 /* ArcsinusSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcsinusSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB36B0B25FD078000A11800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,16 +75,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C836124A44DB00B4883CAE /* Pods_ArcsinusSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0FF0C825FE55080099B79A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9B0FF0C925FE551C0099B79A /* Coordinatable.swift */,
+				9B0FF14D25FE7B280099B79A /* Routable.swift */,
+				9B0FF0EF25FE6A960099B79A /* Transition */,
+				9B0FF0DA25FE5ABA0099B79A /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9B0FF0DE25FE603E0099B79A /* FeedDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9B0FF0DF25FE605A0099B79A /* FeedDetailsViewController.swift */,
+				9B0FF0E325FE608D0099B79A /* FeedDetailsViewModel.swift */,
+			);
+			path = FeedDetailsViewController;
+			sourceTree = "<group>";
+		};
+		9B0FF0EA25FE64650099B79A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B0FF0EC25FE64BF0099B79A /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B0FF0EB25FE64730099B79A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9BB36B1925FD078100A11800 /* Info.plist */,
+				9BB36B1425FD078100A11800 /* Assets.xcassets */,
+				9BB36B1625FD078100A11800 /* LaunchScreen.storyboard */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		9B0FF0EF25FE6A960099B79A /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				9B0FF0CC25FE55C00099B79A /* Transition.swift */,
+				9B0FF0F025FE6C560099B79A /* PushTransition.swift */,
+				9B0FF0FD25FE73CD0099B79A /* ModalTransition.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		9B348CDA25FD1F7C004B14E3 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
 				9B348CDB25FD1F93004B14E3 /* BaseViewController.swift */,
+				9B0FF0C525FE54CF0099B79A /* BaseViewModel.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -66,6 +144,8 @@
 			children = (
 				9BB36B0A25FD078000A11800 /* ArcsinusSampleApp */,
 				9BB36B0925FD078000A11800 /* Products */,
+				B2F485905FB1684B460282B2 /* Pods */,
+				F75B0EF39B3E4A1CA3BB21EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,9 +167,8 @@
 				9BB36B2025FD078F00A11800 /* Services */,
 				9BB36B2325FD07A200A11800 /* Views */,
 				9BB36B3425FD0C8300A11800 /* Managers */,
-				9BB36B1425FD078100A11800 /* Assets.xcassets */,
-				9BB36B1625FD078100A11800 /* LaunchScreen.storyboard */,
-				9BB36B1925FD078100A11800 /* Info.plist */,
+				9B0FF0EA25FE64650099B79A /* Extensions */,
+				9B0FF0EB25FE64730099B79A /* Misc */,
 			);
 			path = ArcsinusSampleApp;
 			sourceTree = "<group>";
@@ -142,6 +221,7 @@
 				9BB36B1125FD078000A11800 /* Main.storyboard */,
 				9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */,
 				9BB36B2825FD07CF00A11800 /* FeedViewController */,
+				9B0FF0DE25FE603E0099B79A /* FeedDetailsViewController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -150,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				9BB36B2A25FD086F00A11800 /* FeedViewController.swift */,
+				9B0FF0C025FE54290099B79A /* FeedViewModel.swift */,
 			);
 			path = FeedViewController;
 			sourceTree = "<group>";
@@ -157,7 +238,9 @@
 		9BB36B2925FD07FD00A11800 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				9B348CD625FD1D13004B14E3 /* Storyboardable.swift */,
+				9B348CD625FD1D13004B14E3 /* Storyboard.swift */,
+				9B0FF0FA25FE6EB90099B79A /* ViewModelRoutable.swift */,
+				9B0FF0C825FE55080099B79A /* Coordinator */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -203,6 +286,23 @@
 			path = FeedService;
 			sourceTree = "<group>";
 		};
+		B2F485905FB1684B460282B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7879290372944B17114E5797 /* Pods-ArcsinusSampleApp.debug.xcconfig */,
+				324130F5E75FF35768ED13A1 /* Pods-ArcsinusSampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F75B0EF39B3E4A1CA3BB21EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781DF8BC8B8783E775D4D81C /* Pods_ArcsinusSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB36B1C25FD078100A11800 /* Build configuration list for PBXNativeTarget "ArcsinusSampleApp" */;
 			buildPhases = (
+				FDCF3D331C88BEC22E930A4E /* [CP] Check Pods Manifest.lock */,
 				9BB36B0425FD078000A11800 /* Sources */,
 				9BB36B0525FD078000A11800 /* Frameworks */,
 				9BB36B0625FD078000A11800 /* Resources */,
+				5C12A0DB39A8F23FD6B4D09F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,22 +370,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C12A0DB39A8F23FD6B4D09F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcsinusSampleApp/Pods-ArcsinusSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcsinusSampleApp/Pods-ArcsinusSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArcsinusSampleApp/Pods-ArcsinusSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCF3D331C88BEC22E930A4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArcsinusSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BB36B0425FD078000A11800 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0FF0CD25FE55C00099B79A /* Transition.swift in Sources */,
 				9BB36B3025FD0C7500A11800 /* APIManager.swift in Sources */,
 				9BB36B2B25FD086F00A11800 /* FeedViewController.swift in Sources */,
+				9B0FF0C125FE54290099B79A /* FeedViewModel.swift in Sources */,
+				9B0FF14E25FE7B280099B79A /* Routable.swift in Sources */,
 				9BB36B0C25FD078000A11800 /* AppDelegate.swift in Sources */,
 				9BB36B3825FD0CE300A11800 /* DBManager.swift in Sources */,
+				9B0FF0ED25FE64BF0099B79A /* UIViewController+Extensions.swift in Sources */,
 				9B348CCC25FD17C9004B14E3 /* AppCoordinator.swift in Sources */,
 				9B348CDC25FD1F93004B14E3 /* BaseViewController.swift in Sources */,
+				9B0FF0C625FE54CF0099B79A /* BaseViewModel.swift in Sources */,
+				9B0FF0E025FE605A0099B79A /* FeedDetailsViewController.swift in Sources */,
+				9B0FF0DB25FE5ABA0099B79A /* Coordinator.swift in Sources */,
 				9BB36B3F25FD0D3C00A11800 /* FeedService.swift in Sources */,
 				9B348CC825FD16B2004B14E3 /* AppAssembly.swift in Sources */,
+				9B0FF0FE25FE73CD0099B79A /* ModalTransition.swift in Sources */,
 				9B348CD125FD1B42004B14E3 /* FeedCoordinator.swift in Sources */,
-				9B348CD725FD1D13004B14E3 /* Storyboardable.swift in Sources */,
+				9B0FF0F125FE6C560099B79A /* PushTransition.swift in Sources */,
+				9B348CD725FD1D13004B14E3 /* Storyboard.swift in Sources */,
 				9BB36B4425FD0F9F00A11800 /* AppDependecies.swift in Sources */,
+				9B0FF0FB25FE6EB90099B79A /* ViewModelRoutable.swift in Sources */,
+				9B0FF0CA25FE551C0099B79A /* Coordinatable.swift in Sources */,
+				9B0FF0E425FE608D0099B79A /* FeedDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,12 +583,13 @@
 		};
 		9BB36B1D25FD078100A11800 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7879290372944B17114E5797 /* Pods-ArcsinusSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4PW3P33H4B;
-				INFOPLIST_FILE = ArcsinusSampleApp/Info.plist;
+				INFOPLIST_FILE = ArcsinusSampleApp/Misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,12 +604,13 @@
 		};
 		9BB36B1E25FD078100A11800 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324130F5E75FF35768ED13A1 /* Pods-ArcsinusSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4PW3P33H4B;
-				INFOPLIST_FILE = ArcsinusSampleApp/Info.plist;
+				INFOPLIST_FILE = ArcsinusSampleApp/Misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
