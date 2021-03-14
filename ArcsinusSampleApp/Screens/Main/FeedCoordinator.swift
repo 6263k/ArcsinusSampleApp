@@ -9,6 +9,7 @@ import RxSwift
 
 final class FeedCoordinator: Coordinator {
 	enum Route {
+		case feed
 		case feedDetails
 		case filters
 	}
@@ -29,6 +30,23 @@ final class FeedCoordinator: Coordinator {
 	}
 	
 	func start() {
+		route(to: .feed, with: SetTransition(isAnimated: false))
+		parentNavigationController.show(navigationController, sender: nil)
+	}
+	
+	func route(to route: Route, with transition: Transition) {
+		switch route {
+		case .feed:
+			routeToFeedViewController(with: transition)
+		case .feedDetails:
+			guard let feedDetailsViewController = FeedDetailsViewController.create(FeedDetailsViewModel(), with: Storyboard.main) else { return }
+			transition.open(feedDetailsViewController, from: navigationController, completion: nil)
+		case .filters:
+			break;
+		}
+	}
+	
+	private func routeToFeedViewController(with transition: Transition) {
 		let feedViewModel = FeedViewModel()
 		feedViewModel.route.subscribe(onNext: { [weak self] route in
 			switch route {
@@ -40,17 +58,6 @@ final class FeedCoordinator: Coordinator {
 		}).disposed(by: feedViewModel.disposeBag)
 		
 		guard let feedViewController = FeedViewController.create(feedViewModel, with: Storyboard.main) else { return }
-		navigationController.setViewControllers([feedViewController], animated: false)
-		parentNavigationController.show(navigationController, sender: nil)
-	}
-	
-	func route(to route: Route, with transition: Transition) {
-		switch route {
-		case .feedDetails:
-			guard let feedDetailsViewController = FeedDetailsViewController.create(FeedDetailsViewModel(), with: Storyboard.main) else { return }
-			transition.open(feedDetailsViewController, from: navigationController, completion: nil)
-		case .filters:
-			break;
-		}
+		transition.open(feedViewController, from: navigationController, completion: nil)
 	}
 }

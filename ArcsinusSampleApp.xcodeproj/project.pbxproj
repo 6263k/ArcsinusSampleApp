@@ -19,6 +19,7 @@
 		9B0FF0FB25FE6EB90099B79A /* ViewModelRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0FA25FE6EB90099B79A /* ViewModelRoutable.swift */; };
 		9B0FF0FE25FE73CD0099B79A /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF0FD25FE73CD0099B79A /* ModalTransition.swift */; };
 		9B0FF14E25FE7B280099B79A /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF14D25FE7B280099B79A /* Routable.swift */; };
+		9B0FF15125FE7D0F0099B79A /* SetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FF15025FE7D0F0099B79A /* SetTransition.swift */; };
 		9B348CC825FD16B2004B14E3 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CC725FD16B2004B14E3 /* AppAssembly.swift */; };
 		9B348CCC25FD17C9004B14E3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CCB25FD17C9004B14E3 /* AppCoordinator.swift */; };
 		9B348CD125FD1B42004B14E3 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */; };
@@ -52,6 +53,7 @@
 		9B0FF0FA25FE6EB90099B79A /* ViewModelRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelRoutable.swift; sourceTree = "<group>"; };
 		9B0FF0FD25FE73CD0099B79A /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 		9B0FF14D25FE7B280099B79A /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		9B0FF15025FE7D0F0099B79A /* SetTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTransition.swift; sourceTree = "<group>"; };
 		9B348CC725FD16B2004B14E3 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		9B348CCB25FD17C9004B14E3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				9B0FF0CC25FE55C00099B79A /* Transition.swift */,
 				9B0FF0F025FE6C560099B79A /* PushTransition.swift */,
 				9B0FF0FD25FE73CD0099B79A /* ModalTransition.swift */,
+				9B0FF15025FE7D0F0099B79A /* SetTransition.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				9BB36B2B25FD086F00A11800 /* FeedViewController.swift in Sources */,
 				9B0FF0C125FE54290099B79A /* FeedViewModel.swift in Sources */,
 				9B0FF14E25FE7B280099B79A /* Routable.swift in Sources */,
+				9B0FF15125FE7D0F0099B79A /* SetTransition.swift in Sources */,
 				9BB36B0C25FD078000A11800 /* AppDelegate.swift in Sources */,
 				9BB36B3825FD0CE300A11800 /* DBManager.swift in Sources */,
 				9B0FF0ED25FE64BF0099B79A /* UIViewController+Extensions.swift in Sources */,
