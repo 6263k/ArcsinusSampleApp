@@ -7,22 +7,12 @@
 
 import RxSwift
 
-final class FeedViewModel: BaseViewModel, ViewModelRoutable {
-	enum RouteAction {
-		case showDetails
-		case presentFilters
-	}
-	
-	let route = PublishSubject<RouteAction>()
-	let nextButtonPressed = PublishSubject<Void>()
-	
+final class FeedViewModel: BaseViewModel {
+
 	let disposeBag = DisposeBag()
 	
 	override func setupModel() {
 		super.setupModel()
-		
-		nextButtonPressed.map { _ -> RouteAction in
-			return .showDetails
-		}.bind(to: route).disposed(by: disposeBag)
+
 	}
 }

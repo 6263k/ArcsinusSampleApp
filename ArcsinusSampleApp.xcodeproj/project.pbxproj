@@ -25,6 +25,11 @@
 		9B348CD125FD1B42004B14E3 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */; };
 		9B348CD725FD1D13004B14E3 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CD625FD1D13004B14E3 /* Storyboard.swift */; };
 		9B348CDC25FD1F93004B14E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B348CDB25FD1F93004B14E3 /* BaseViewController.swift */; };
+		9B8ACC1F2605EDE40073D9B6 /* FeedTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACC1E2605EDE40073D9B6 /* FeedTarget.swift */; };
+		9B8ACC232605EF590073D9B6 /* MultiMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACC222605EF590073D9B6 /* MultiMoyaProvider.swift */; };
+		9B8ACC282605F15A0073D9B6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACC272605F15A0073D9B6 /* APIError.swift */; };
+		9B8ACC2D2605F5DE0073D9B6 /* AuthorizationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACC2C2605F5DE0073D9B6 /* AuthorizationPlugin.swift */; };
+		9B8ACC3826067ED80073D9B6 /* Single+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACC3726067ED80073D9B6 /* Single+Extensions.swift */; };
 		9BB36B0C25FD078000A11800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB36B0B25FD078000A11800 /* AppDelegate.swift */; };
 		9BB36B1325FD078000A11800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB36B1125FD078000A11800 /* Main.storyboard */; };
 		9BB36B1525FD078100A11800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB36B1425FD078100A11800 /* Assets.xcassets */; };
@@ -59,6 +64,11 @@
 		9B348CD025FD1B42004B14E3 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		9B348CD625FD1D13004B14E3 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		9B348CDB25FD1F93004B14E3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9B8ACC1E2605EDE40073D9B6 /* FeedTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTarget.swift; sourceTree = "<group>"; };
+		9B8ACC222605EF590073D9B6 /* MultiMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiMoyaProvider.swift; sourceTree = "<group>"; };
+		9B8ACC272605F15A0073D9B6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		9B8ACC2C2605F5DE0073D9B6 /* AuthorizationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPlugin.swift; sourceTree = "<group>"; };
+		9B8ACC3726067ED80073D9B6 /* Single+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+Extensions.swift"; sourceTree = "<group>"; };
 		9BB36B0825FD078000A11800 /* ArcsinusSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcsinusSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB36B0B25FD078000A11800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB36B1225FD078000A11800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				9B0FF0EC25FE64BF0099B79A /* UIViewController+Extensions.swift */,
+				9B8ACC3726067ED80073D9B6 /* Single+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +151,38 @@
 				9B0FF0C525FE54CF0099B79A /* BaseViewModel.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		9B8ACC1D2605E9C40073D9B6 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				9B8ACC1E2605EDE40073D9B6 /* FeedTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		9B8ACC212605EF3E0073D9B6 /* MultiMoyaProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9B8ACC222605EF590073D9B6 /* MultiMoyaProvider.swift */,
+			);
+			path = MultiMoyaProvider;
+			sourceTree = "<group>";
+		};
+		9B8ACC262605F1480073D9B6 /* APIError */ = {
+			isa = PBXGroup;
+			children = (
+				9B8ACC272605F15A0073D9B6 /* APIError.swift */,
+			);
+			path = APIError;
+			sourceTree = "<group>";
+		};
+		9B8ACC2B2605F57A0073D9B6 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				9B8ACC2C2605F5DE0073D9B6 /* AuthorizationPlugin.swift */,
+			);
+			path = Plugins;
 			sourceTree = "<group>";
 		};
 		9BB36AFF25FD078000A11800 = {
@@ -260,6 +303,10 @@
 			isa = PBXGroup;
 			children = (
 				9BB36B2F25FD0C7500A11800 /* APIManager.swift */,
+				9B8ACC2B2605F57A0073D9B6 /* Plugins */,
+				9B8ACC262605F1480073D9B6 /* APIError */,
+				9B8ACC212605EF3E0073D9B6 /* MultiMoyaProvider */,
+				9B8ACC1D2605E9C40073D9B6 /* Targets */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -422,17 +469,22 @@
 			files = (
 				9B0FF0CD25FE55C00099B79A /* Transition.swift in Sources */,
 				9BB36B3025FD0C7500A11800 /* APIManager.swift in Sources */,
+				9B8ACC232605EF590073D9B6 /* MultiMoyaProvider.swift in Sources */,
 				9BB36B2B25FD086F00A11800 /* FeedViewController.swift in Sources */,
 				9B0FF0C125FE54290099B79A /* FeedViewModel.swift in Sources */,
 				9B0FF14E25FE7B280099B79A /* Routable.swift in Sources */,
 				9B0FF15125FE7D0F0099B79A /* SetTransition.swift in Sources */,
 				9BB36B0C25FD078000A11800 /* AppDelegate.swift in Sources */,
+				9B8ACC282605F15A0073D9B6 /* APIError.swift in Sources */,
 				9BB36B3825FD0CE300A11800 /* DBManager.swift in Sources */,
+				9B8ACC3826067ED80073D9B6 /* Single+Extensions.swift in Sources */,
 				9B0FF0ED25FE64BF0099B79A /* UIViewController+Extensions.swift in Sources */,
 				9B348CCC25FD17C9004B14E3 /* AppCoordinator.swift in Sources */,
 				9B348CDC25FD1F93004B14E3 /* BaseViewController.swift in Sources */,
+				9B8ACC1F2605EDE40073D9B6 /* FeedTarget.swift in Sources */,
 				9B0FF0C625FE54CF0099B79A /* BaseViewModel.swift in Sources */,
 				9B0FF0E025FE605A0099B79A /* FeedDetailsViewController.swift in Sources */,
+				9B8ACC2D2605F5DE0073D9B6 /* AuthorizationPlugin.swift in Sources */,
 				9B0FF0DB25FE5ABA0099B79A /* Coordinator.swift in Sources */,
 				9BB36B3F25FD0D3C00A11800 /* FeedService.swift in Sources */,
 				9B348CC825FD16B2004B14E3 /* AppAssembly.swift in Sources */,

@@ -13,7 +13,7 @@ final class FeedViewController: BaseViewController<FeedViewModel> {
 	private let disposeBag = DisposeBag()
 	
 	override func setupRx() {
-		nextButton.rx.tap.bind(to: viewModel.nextButtonPressed).disposed(by: disposeBag)
+		//nextButton.rx.tap.bind(to: viewModel.nextButtonPressed).disposed(by: disposeBag)
 	}
 	
 	override func setupStyle() {

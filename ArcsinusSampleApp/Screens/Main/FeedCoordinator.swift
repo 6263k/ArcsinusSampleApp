@@ -48,14 +48,14 @@ final class FeedCoordinator: Coordinator {
 	
 	private func routeToFeedViewController(with transition: Transition) {
 		let feedViewModel = FeedViewModel()
-		feedViewModel.route.subscribe(onNext: { [weak self] route in
-			switch route {
-			case .showDetails:
-				self?.route(to: .feedDetails, with: PushTransition())
-			case .presentFilters:
-				self?.route(to: .filters, with: ModalTransition())
-			}
-		}).disposed(by: feedViewModel.disposeBag)
+//		feedViewModel.route.subscribe(onNext: { [weak self] route in
+//			switch route {
+//			case .showDetails:
+//				self?.route(to: .feedDetails, with: PushTransition())
+//			case .presentFilters:
+//				self?.route(to: .filters, with: ModalTransition())
+//			}
+//		}).disposed(by: feedViewModel.disposeBag)
 		
 		guard let feedViewController = FeedViewController.create(feedViewModel, with: Storyboard.main) else { return }
 		transition.open(feedViewController, from: navigationController, completion: nil)
